@@ -16,5 +16,5 @@ This is a packer template for a base install of Ubuntu 20.04 using vsphere.
     packer build --var-file="c:\path\to\your\pkrvars.hcl" Ubuntu-20.04.pkr.hcl
     
 ## Defaults
-Username: ubuntu
+Username: ubuntu  
 Password: ubuntu
