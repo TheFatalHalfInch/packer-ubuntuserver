@@ -18,3 +18,8 @@ This is a packer template for a base install of Ubuntu 20.04 using vsphere.
 ## Defaults
 Username: ubuntu  
 Password: ubuntu
+
+https://stackoverflow.com/questions/67457987/ubuntu-server-installation-stops-at-curtin-command-in-target  
+https://cloudinit.readthedocs.io/en/latest/topics/datasources/nocloud.html  
+https://stackoverflow.com/questions/43674019/cloud-init-not-working-for-nocloud-datasource  
+https://www.packer.io/plugins/builders/virtualbox/iso#gfx_vram_size
