@@ -1,15 +1,7 @@
 #cloud-config
 autoinstall:
+  version: 1
   identity:
     hostname: ubuntu
-    password: $1$fNeTRDMQ$jtUaNHCdHiZCuKLNeYKmD0
-    realname: ubuntu
     username: ubuntu
-  keyboard:
-    layout: us
-    toggle: null
-    variant: ''
-  locale: en_US
-  ssh:
-    install-server: true
-  version: 1
+    password: $1$fNeTRDMQ$jtUaNHCdHiZCuKLNeYKmD0
