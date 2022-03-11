@@ -1,14 +1,28 @@
 #cloud-config
+#runcmd:
+#   - echo $(cat /proc/cmdline) "autoinstall" > /root/cmdline
+#   - mount -n --bind -o ro /root/cmdline /proc/cmdline
+#   - ip link set enp0s3 down
+#   - snap restart subiquity.subiquity-service
+
 autoinstall:
   version: 1
+  early-commands:
+     - ip link set enp0s3 down
+     - systemctl stop ssh
+  late-commands:
+     - ip link set enp0s3 up
   identity:
     hostname: ubuntu
     username: ubuntu
     password: $1$fNeTRDMQ$jtUaNHCdHiZCuKLNeYKmD0
   network:
-    version: 2
-    ethernets:
-      any:
-        match:
-          name: en*
-        dhcp4: true
+    network:
+      version: 2
+      ethernets:
+        any:
+          match:
+            name: en*
+          dhcp4: true
+  ssh:
+    install-server: true
