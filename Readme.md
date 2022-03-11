@@ -22,4 +22,7 @@ Password: ubuntu
 https://stackoverflow.com/questions/67457987/ubuntu-server-installation-stops-at-curtin-command-in-target  
 https://cloudinit.readthedocs.io/en/latest/topics/datasources/nocloud.html  
 https://stackoverflow.com/questions/43674019/cloud-init-not-working-for-nocloud-datasource  
-https://www.packer.io/plugins/builders/virtualbox/iso#gfx_vram_size
+https://www.packer.io/plugins/builders/virtualbox/iso#gfx_vram_size  
+https://askubuntu.com/questions/1389146/ubuntu-20-04-3-server-autoinstall-user-data-does-bootorder-efibootmgr-not-change  
+https://gist.github.com/bitsandbooks/6e73ec61a44d9e17e1c21b3b8a0a9d4c  
+https://ubuntu.com/server/docs/install/autoinstall-reference  
