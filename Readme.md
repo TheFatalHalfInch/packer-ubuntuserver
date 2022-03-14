@@ -26,3 +26,4 @@ https://www.packer.io/plugins/builders/virtualbox/iso#gfx_vram_size
 https://askubuntu.com/questions/1389146/ubuntu-20-04-3-server-autoinstall-user-data-does-bootorder-efibootmgr-not-change  
 https://gist.github.com/bitsandbooks/6e73ec61a44d9e17e1c21b3b8a0a9d4c  
 https://ubuntu.com/server/docs/install/autoinstall-reference  
+https://gist.github.com/eshizhan/6650285  
