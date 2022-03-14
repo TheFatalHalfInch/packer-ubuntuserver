@@ -117,4 +117,9 @@ build {
       "sudo apt-get -y upgrade"
     ]
   }
+
+  provisioner "shell" {
+    execute_command   = "echo '${var.ssh_password}' | {{ .Vars }} sudo -E -S bash '{{ .Path }}'"
+    script = "${path.root}/scripts/cleanup.sh"
+  }
 }
