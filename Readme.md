@@ -13,8 +13,12 @@ This is a packer template for a base install of Ubuntu 20.04 using vsphere.
 - Clone the repo
 - Create a pkrvars.hcl file with your variables somewhere on your computer
 - CD into the cloned directory  
-    packer build --var-file="c:\path\to\your\pkrvars.hcl" Ubuntu-20.04.pkr.hcl
-    
+    ```bash
+    packer build Ubuntu-22.04.1.pkr.hcl
+    ```
+- You will need to alter the exported OVF file per these instructions for ESXi:  
+    https://jekil.sexy/blog/2015/this-ovf-package-requires-unsupported-hardware.html
+
 ## Defaults
 Username: ubuntu  
 Password: ubuntu
