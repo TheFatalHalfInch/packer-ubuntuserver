@@ -5,13 +5,13 @@ variable "iso_checksum" {
 }
 variable "iso_url" {
   type = string
-  default = "http://releases.ubuntu.com/20.04/ubuntu-20.04.4-live-server-amd64.iso"
+  default = "http://releases.ubuntu.com/22.04/ubuntu-22.04.1-live-server-amd64.iso"
 }
 
 //vm specs
 variable "name" {
   type = string
-  default = "UbuntuServer-20.04"
+  default = "UbuntuServer-22.04"
 }
 variable "cpus" {
   type = number
