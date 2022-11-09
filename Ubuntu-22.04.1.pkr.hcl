@@ -1,7 +1,7 @@
 //iso vars
 variable "iso_checksum" {
   type = string
-  default = "sha256:28ccdb56450e643bad03bb7bcf7507ce3d8d90e8bf09e38f6bd9ac298a98eaad"
+  default = "sha256:10f19c5b2b8d6db711582e0e27f5116296c34fe4b313ba45f9b201a5007056cb"
 }
 variable "iso_url" {
   type = string
