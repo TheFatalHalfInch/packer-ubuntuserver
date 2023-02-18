@@ -19,6 +19,17 @@ This is a packer template for a base install of Ubuntu 20.04 using vsphere.
 - You will need to alter the exported OVF file per these instructions for ESXi:  
     https://jekil.sexy/blog/2015/this-ovf-package-requires-unsupported-hardware.html
 
+## Update the OVF file
+
+After successfully creating the template, you'll need to change the following in the OVF file in the output directory:
+```
+#FROM
+<vssd:VirtualSystemType>virtualbox-2.2</vssd:VirtualSystemType>
+
+#TO
+<vssd:VirtualSystemType>vmx-19</vssd:VirtualSystemType>
+```
+
 ## Defaults
 Username: ubuntu  
 Password: ubuntu
