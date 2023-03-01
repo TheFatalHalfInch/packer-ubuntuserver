@@ -8,10 +8,10 @@
 autoinstall:
   version: 1
   early-commands:
-     #- ip link set enp0s3 down
+     - ip link set enp0s3 down
      - systemctl stop ssh
-  #late-commands:
-     #- ip link set enp0s3 up
+  late-commands:
+     - ip link set enp0s3 up
   identity:
     hostname: ubuntu
     username: ubuntu
